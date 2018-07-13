@@ -1,3 +1,4 @@
+from django.core.validators import RegexValidator
 from django.db import models
 
 
@@ -9,7 +10,6 @@ class Profile(models.Model):
         null=True, blank=True
     )
     email = models.EmailField(max_length=30)
-    jabber = models.EmailField(max_length=30)
     skype = models.CharField(max_length=30)
-    other_contacts = models.TextField()
+    phone_number = models.CharField(max_length=15, blank=True)
     bio = models.TextField()
