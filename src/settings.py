@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-import django_heroku
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -142,5 +141,3 @@ STATICFILES_DIRS = (
 )
 
 DATE_FORMAT = "Y-m-d"
-
-django_heroku.settings(locals())
